@@ -8,7 +8,9 @@ import java.util.concurrent.CompletableFuture;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = "json:target/cucumber.json",
+        plugin = {"json:target/cucumber.json",
+                "html:target/default-html-report"
+        },
         features = "src/test/resources/features",
         glue = "/com/yaytech/step_definitions",
         dryRun = false,
@@ -17,7 +19,9 @@ import java.util.concurrent.CompletableFuture;
 )
 public class CukesRunner {
 
+//please check the scenario outline and scenario
 
+//        another test commit in test branch
 
 
 }
